@@ -1,1 +1,1 @@
-# -js-paliedispari
+# js-paliedispari
