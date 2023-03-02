@@ -4,12 +4,12 @@
 let parolaDom = prompt('inserisci una parola');
 
 // creo una funzione e inserisco i valori e poi verifichiamo se le lettere sono uguali
-function palindromi (parola){
+function palindroma (parola){
     let inizio = 0;
     let fine = parola.length - 1;
     let controllo = true;
     
-    for (var i = 0; i < parola.length; i++) {
+    for (let i = 0; i < parola.length; i++) {
       if(parola[inizio] !== parola[fine]){
         controllo = false;
       }
@@ -20,7 +20,7 @@ function palindromi (parola){
   }
   
   // verifichiamo se la nostra parola che abbaiamo scritto e palindroma
-  if (palindromi(parolaDom)){
+  if (palindroma(parolaDom)){
     console.log('la parola è palindroma');
   }else{
     console.log('la parola non è palindroma');
