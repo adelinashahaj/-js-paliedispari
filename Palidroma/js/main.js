@@ -1,11 +1,27 @@
 
-//chiedo all utente di inserire un parola
+//chiedo all utente di inserire una parola
 
-let parolaDom = prompt("Inserisci una parola");
-console.log(parolaDom);
+let parolaDom = prompt('inserisci una parola');
 
-const stringa = "RADAR";
-
-for (let i = 0; i < stringa.length; i++){
-    console.log(stringa[i]);
-}
+// creo una funzione e inserisco i valori e poi verifichiamo se le lettere sono uguali
+function palindromi (parola){
+    let inizio = 0;
+    let fine = parola.length - 1;
+    let controllo = true;
+    
+    for (var i = 0; i < parola.length; i++) {
+      if(parola[inizio] !== parola[fine]){
+        controllo = false;
+      }
+      console.log(controllo);
+      
+    }
+    return controllo;
+  }
+  
+  // verifichiamo se la nostra parola che abbaiamo scritto e palindroma
+  if (palindromi(parolaDom)){
+    console.log('la parola è palindroma');
+  }else{
+    console.log('la parola non è palindroma');
+  }
